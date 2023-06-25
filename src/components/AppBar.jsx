@@ -1,8 +1,8 @@
-import React from "react";
-import { ViewPropTypes, StyleSheet, View } from "react-native";
-import StyledText from "./StyledText";
 import Constants from "expo-constants";
+import React from "react";
+import { StyleSheet, View } from "react-native";
 import theme from "../theme";
+import StyledText from "./StyledText";
 
 const styles = StyleSheet.create({
   container: {
