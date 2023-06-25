@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import StyledText from "./StyledText.jsx";
+import StyledView from "./StyledView.jsx";
 
 const parseThousands = (value) => {
   return value >= 1000 ? `${Math.round(value / 100) / 10}k` : String(value);
@@ -8,7 +9,7 @@ const parseThousands = (value) => {
 
 const RepositoryStats = (props) => {
   return (
-    <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
+    <StyledView flexDirection={"row"} justifyContent={"space-around"}>
       <View>
         <StyledText align="center" fontWeight="bold">
           {parseThousands(props.stargazersCount)}
@@ -33,7 +34,7 @@ const RepositoryStats = (props) => {
         </StyledText>
         <StyledText align="center">Rating</StyledText>
       </View>
-    </View>
+    </StyledView>
   );
 };
 

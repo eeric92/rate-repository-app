@@ -33,6 +33,8 @@ export default function StyledText({
   fontSize,
   fontWeight,
   style,
+  flexDirection,
+  justifyContent,
   ...restOfProps
 }) {
   const textStyles = [
@@ -42,6 +44,9 @@ export default function StyledText({
     color === "secondary" && styles.colorSecondary,
     fontSize === "subheading" && styles.subheading,
     fontWeight === "bold" && styles.bold,
+    flexDirection === "row" && styles.flexDirectionRow,
+    justifyContent === "space-around" && styles.justifyContentSpaceAround,
+    style,
   ];
 
   return (
